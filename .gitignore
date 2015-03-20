@@ -14,6 +14,25 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# altera compile files/folders
+/db
+/incremental_db
+/greybox_tmp
+*.bak
+*.rpt
+*.summary
+*.done
+*.pin
+*.sof
+*.jic
+*.smsg
+*.jdi
+*.map
+*.cdf
+*.qip
+*.ppf
+*.txt
+
 # Windows shortcuts
 *.lnk
 

@@ -1,0 +1,271 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 11.0 Build 157 04/27/2011 SJ Full Version
+# Date created = 14:02:54  June 22, 2012
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Central_Card_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix III"
+set_global_assignment -name DEVICE EP3SL50F484C4
+set_global_assignment -name TOP_LEVEL_ENTITY Central_Card
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:02:54  JUNE 22, 2012"
+set_global_assignment -name LAST_QUARTUS_VERSION 12.1
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+
+# Pin Assignments
+# Pin Assignments
+set_instance_assignment -name IO_STANDARD LVDS -to DC1in
+set_instance_assignment -name IO_STANDARD LVDS -to DC1out
+set_instance_assignment -name IO_STANDARD LVDS -to DC2in
+set_instance_assignment -name IO_STANDARD LVDS -to DC2out
+set_instance_assignment -name IO_STANDARD LVDS -to DC3in
+set_instance_assignment -name IO_STANDARD LVDS -to DC3out
+set_instance_assignment -name IO_STANDARD LVDS -to Systemin
+set_instance_assignment -name IO_STANDARD LVDS -to Systemout
+set_instance_assignment -name IO_STANDARD LVDS -to DCrefclock
+set_instance_assignment -name IO_STANDARD LVDS -to ENET_CLK
+set_instance_assignment -name IO_STANDARD LVDS -to ENET_RX
+set_instance_assignment -name IO_STANDARD LVDS -to ENET_TX
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to DC1in
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to DC2in
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to DC3in
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to Systemin
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to DCrefclock
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to ENET_CLK
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to ENET_RX
+set_location_assignment PIN_A2 -to led_0
+set_location_assignment PIN_E3 -to led_1
+set_location_assignment PIN_T7 -to led_2
+set_location_assignment PIN_B5 -to Systemout
+set_location_assignment PIN_T13 -to ENET_GTX_CLK
+set_location_assignment PIN_G21 -to ENET_TX_CLK
+set_location_assignment PIN_W14 -to ENET_RX_CLK
+set_location_assignment PIN_M15 -to ENET_TX
+set_location_assignment PIN_F7 -to DC1out[2]
+set_location_assignment PIN_F8 -to DC1out[1]
+set_location_assignment PIN_H6 -to DC1out[0]
+set_location_assignment PIN_H5 -to DC2out[2]
+set_location_assignment PIN_J4 -to DC2out[1]
+set_location_assignment PIN_H7 -to DC2out[0]
+set_location_assignment PIN_K8 -to DC3out[2]
+set_location_assignment PIN_L4 -to DC3out[1]
+set_location_assignment PIN_M4 -to DC3out[0]
+set_location_assignment PIN_T2 -to DC3in[2]
+set_location_assignment PIN_AB18 -to DC2in[2]
+set_location_assignment PIN_T3 -to DC3in[0]
+set_location_assignment PIN_AA21 -to DC2in[0]
+set_location_assignment PIN_V1 -to DC3in[3]
+set_location_assignment PIN_Y22 -to DC2in[3]
+set_location_assignment PIN_W3 -to DC3in[1]
+set_location_assignment PIN_T20 -to DC2in[1]
+set_location_assignment PIN_C12 -to ENET_TX_EN
+set_location_assignment PIN_L20 -to ENET_TX_ER
+set_location_assignment PIN_L19 -to ENET_TX_D[7]
+set_location_assignment PIN_K21 -to ENET_TX_D[6]
+set_location_assignment PIN_AB14 -to ENET_TX_D[5]
+set_location_assignment PIN_J22 -to ENET_TX_D[4]
+set_location_assignment PIN_F15 -to ENET_TX_D[3]
+set_location_assignment PIN_D12 -to ENET_TX_D[2]
+set_location_assignment PIN_F14 -to ENET_TX_D[1]
+set_location_assignment PIN_A12 -to ENET_TX_D[0]
+set_location_assignment PIN_E22 -to USB_SPARE
+set_location_assignment PIN_J1 -to debug[19]
+set_location_assignment PIN_N4 -to debug[18]
+set_location_assignment PIN_N5 -to debug[17]
+set_location_assignment PIN_P4 -to debug[16]
+set_location_assignment PIN_P3 -to debug[15]
+set_location_assignment PIN_V4 -to debug[14]
+set_location_assignment PIN_R6 -to debug[13]
+set_location_assignment PIN_P7 -to debug[12]
+set_location_assignment PIN_T8 -to debug[11]
+set_location_assignment PIN_N3 -to debug[10]
+set_location_assignment PIN_K4 -to debug[9]
+set_location_assignment PIN_H3 -to debug[8]
+set_location_assignment PIN_M6 -to debug[7]
+set_location_assignment PIN_N2 -to debug[6]
+set_location_assignment PIN_M7 -to debug[5]
+set_location_assignment PIN_F21 -to debug[4]
+set_location_assignment PIN_V6 -to debug[3]
+set_location_assignment PIN_AB1 -to debug[2]
+set_location_assignment PIN_G15 -to USB_PA[7]
+set_location_assignment PIN_H16 -to USB_PA[6]
+set_location_assignment PIN_D22 -to USB_PA[5]
+set_location_assignment PIN_F22 -to USB_PA[4]
+set_location_assignment PIN_J19 -to USB_PA[3]
+set_location_assignment PIN_F20 -to USB_PA[2]
+set_location_assignment PIN_K16 -to USB_PA[1]
+set_location_assignment PIN_G20 -to USB_PA[0]
+set_location_assignment PIN_G19 -to USB__WAKEUP
+set_location_assignment PIN_H19 -to USB_IFCLK
+set_location_assignment PIN_G22 -to USB_CTL[2]
+set_location_assignment PIN_H20 -to USB_CTL[1]
+set_location_assignment PIN_L16 -to USB_CTL[0]
+set_location_assignment PIN_Y12 -to ENET_MDC
+set_location_assignment PIN_U13 -to ENET_MDIO
+set_location_assignment PIN_V13 -to ENET_RESETn
+set_location_assignment PIN_R13 -to ENET_RX_CRS
+set_location_assignment PIN_W12 -to ENET_RX_COL
+set_location_assignment PIN_U14 -to ENET_INTn
+set_location_assignment PIN_W13 -to ENET_LED_LINK1000
+set_location_assignment PIN_T17 -to ENET_RX_DV
+set_location_assignment PIN_R20 -to ENET_RX_ER
+set_location_assignment PIN_P20 -to ENET_led_an
+set_location_assignment PIN_AA15 -to ENET_led_disp_err
+set_location_assignment PIN_N17 -to ENET_led_char_err
+set_location_assignment PIN_N16 -to ENETled_link
+set_location_assignment PIN_P16 -to ENET_RX_D[7]
+set_location_assignment PIN_P17 -to ENET_RX_D[6]
+set_location_assignment PIN_R19 -to ENET_RX_D[5]
+set_location_assignment PIN_T19 -to ENET_RX_D[4]
+set_location_assignment PIN_T15 -to ENET_RX_D[3]
+set_location_assignment PIN_U19 -to ENET_RX_D[2]
+set_location_assignment PIN_U16 -to ENET_RX_D[1]
+set_location_assignment PIN_U15 -to ENET_RX_D[0]
+set_location_assignment PIN_AB3 -to USB_FD[15]
+set_location_assignment PIN_T4 -to USB_FD[14]
+set_location_assignment PIN_U4 -to USB_FD[13]
+set_location_assignment PIN_U7 -to USB_FD[12]
+set_location_assignment PIN_AA1 -to USB_FD[11]
+set_location_assignment PIN_V3 -to USB_FD[10]
+set_location_assignment PIN_U8 -to USB_FD[9]
+set_location_assignment PIN_V7 -to USB_FD[8]
+set_location_assignment PIN_P6 -to USB_FD[7]
+set_location_assignment PIN_N6 -to USB_FD[6]
+set_location_assignment PIN_H2 -to USB_FD[5]
+set_location_assignment PIN_G1 -to USB_FD[4]
+set_location_assignment PIN_A4 -to USB_FD[3]
+set_location_assignment PIN_H1 -to USB_FD[2]
+set_location_assignment PIN_E2 -to USB_FD[1]
+set_location_assignment PIN_G4 -to USB_FD[0]
+set_location_assignment PIN_P19 -to USB_RDY[1]
+set_location_assignment PIN_R18 -to USB_RDY[0]
+set_location_assignment PIN_M21 -to ENET_CLK
+set_location_assignment PIN_AA13 -to CLOCKIN
+set_location_assignment PIN_N21 -to ENET_RX
+set_location_assignment PIN_AB20 -to DC1in[2]
+set_location_assignment PIN_W20 -to DC1in[0]
+set_location_assignment PIN_V21 -to DC1in[3]
+set_location_assignment PIN_R21 -to Systemin[1]
+set_location_assignment PIN_N19 -to Systemin[0]
+set_location_assignment PIN_K2 -to DCrefclock
+set_location_assignment PIN_M19 -to USB_CLKOUT
+set_location_assignment PIN_U22 -to DC1in[1]
+set_location_assignment PIN_D17 -to altera_reserved_tms
+set_location_assignment PIN_D18 -to altera_reserved_tck
+set_location_assignment PIN_E17 -to altera_reserved_tdi
+set_location_assignment PIN_F18 -to altera_reserved_ntrst
+set_location_assignment PIN_A18 -to altera_reserved_tdo
+set_location_assignment PIN_J18 -to ~ALTERA_DATA0~
+set_location_assignment PIN_J17 -to ~ALTERA_DATA1~
+set_location_assignment PIN_K20 -to ~ALTERA_DATA2~
+set_location_assignment PIN_K19 -to ~ALTERA_DATA3~
+set_location_assignment PIN_H17 -to ~ALTERA_DATA4~
+set_location_assignment PIN_J16 -to ~ALTERA_DATA5~
+set_location_assignment PIN_J21 -to ~ALTERA_DATA6~
+set_location_assignment PIN_J20 -to ~ALTERA_DATA7~
+set_location_assignment PIN_U2 -to DC0in[0]
+set_location_assignment PIN_Y2 -to DC0in[1]
+set_location_assignment PIN_P2 -to DC0in[2]
+set_location_assignment PIN_R4 -to DC0in[3]
+set_location_assignment PIN_F4 -to DC0out[0]
+set_location_assignment PIN_E5 -to DC0out[1]
+set_location_assignment PIN_B4 -to DC0out[2]
+
+##set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name RAPID_RECOMPILE_MODE ON
+set_global_assignment -name STRATIXIII_CONFIGURATION_SCHEME "ACTIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name STRATIXII_CONFIGURATION_DEVICE EPCS64
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE tab_usb_2.stp
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SEARCH_PATH USB/ -tag from_archive
+set_global_assignment -name SEARCH_PATH source/ -tag from_archive
+set_instance_assignment -name IO_STANDARD LVDS -to DC0out[0]
+set_location_assignment PIN_F3 -to "DC0out[0](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to DC0out[1]
+set_location_assignment PIN_E4 -to "DC0out[1](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to DC0out[2]
+set_location_assignment PIN_C4 -to "DC0out[2](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to DC0in[0]
+set_location_assignment PIN_U1 -to "DC0in[0](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to DC0in[1]
+set_location_assignment PIN_Y1 -to "DC0in[1](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to DC0in[2]
+set_location_assignment PIN_P1 -to "DC0in[2](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to DC0in[3]
+set_location_assignment PIN_R3 -to "DC0in[3](n)"
+set_global_assignment -name SYNCHRONIZER_IDENTIFICATION AUTO
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name BDF_FILE Central_Card_Slave.bdf
+set_global_assignment -name VHDL_FILE USB/usbwrite.vhd
+set_global_assignment -name VHDL_FILE USB/usbread.vhd
+set_global_assignment -name VHDL_FILE USB/mess.vhd
+set_global_assignment -name BDF_FILE USB/IO16.bdf
+set_global_assignment -name VHDL_FILE USB/USB_READ.vhd
+set_global_assignment -name VHDL_FILE USB/USB_WRITE.vhd
+set_global_assignment -name VHDL_FILE USB/USBmain.vhd
+set_global_assignment -name QIP_FILE source/altlvds_tx0.qip
+set_global_assignment -name QIP_FILE source/altlvds_rx0.qip
+set_global_assignment -name BDF_FILE source/cc_lvds_tranceivers.bdf
+set_global_assignment -name VHDL_FILE source/DC_lvds_com.vhd
+set_global_assignment -name VHDL_FILE source/Definition_Pool.vhd
+set_global_assignment -name QIP_FILE CC_RAM.qip
+set_global_assignment -name BDF_FILE source/CC_lvds_RAM.bdf
+set_global_assignment -name QIP_FILE source/altpll0.qip
+set_global_assignment -name BDF_FILE source/CLK_main.bdf
+set_global_assignment -name VHDL_FILE source/HK_CLK.vhd
+set_global_assignment -name VHDL_FILE source/progreset.vhd
+set_global_assignment -name SDC_FILE Central_Card.sdc
+set_global_assignment -name SIGNALTAP_FILE tab_usb.stp
+set_global_assignment -name VHDL_FILE source/hardware_trigger.vhd
+set_global_assignment -name SIGNALTAP_FILE tap_trig.stp
+set_global_assignment -name SIGNALTAP_FILE tap_instruct.stp
+set_global_assignment -name SIGNALTAP_FILE tab_usb_2.stp
+set_global_assignment -name QIP_FILE Ethernet/tse_mac.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
